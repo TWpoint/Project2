@@ -1,5 +1,5 @@
-# import tensorflow.compat.v1 as tf
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
+
 
 tf.compat.v1.disable_eager_execution()
 from tensorflow.python.ops import rnn_cell
