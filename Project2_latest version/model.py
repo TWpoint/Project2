@@ -1,5 +1,4 @@
-import tensorflow.compat.v1 as tf
-
+import tensorflow._api.v2.compat.v1 as tf
 
 tf.compat.v1.disable_eager_execution()
 from tensorflow.python.ops import rnn_cell
@@ -7,7 +6,8 @@ from tensorflow.python.ops import nn_ops
 from tensorflow.python.ops import variable_scope as vs
 from tensorflow.python.framework import ops
 
-from tensorflow.keras.layers import RNN as rnn
+from tensorflow.python import keras
+from keras.layers import RNN as rnn
 from tensorflow.python.util.nest import flatten
 
 import numpy as np
@@ -174,8 +174,7 @@ class Model():
             # This tensor has dimensions batch_size x seq_length x layer_size.
             inputs = tf.nn.embedding_lookup(embedding, self.input_data)
 
-        # TODO: Check arguments parallel_iterations (default uses more memory and less time) and
-        # swap_memory (default uses more memory but "minimal (or no) performance penalty")
+        # TODO: Check arguments parallel_iterations (default uses more memory and less time) and swap_memory (default uses more memory but "minimal (or no) performance penalty")
         outputs, self.final_state = tf.nn.dynamic_rnn(cell, inputs,
                                                       initial_state=self.initial_state, scope='rnnlm')
         # outputs has shape [batch_size, max_time, cell.output_size] because time_major == false.
@@ -266,6 +265,7 @@ class Model():
             shape = variable.get_shape()
             variable_parameters = 1
             for dim in shape:
-                variable_parameters *= dim.value
+                variable_parameters *= dim
+                # variable_parameters *= dim.value()
             total_parameters += variable_parameters
         return total_parameters

@@ -1,6 +1,8 @@
 import numpy as np
 import tensorflow as tf
 
+tf = tf.compat.v1
+
 import argparse
 import time, datetime
 import os
