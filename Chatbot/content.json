@@ -4,7 +4,7 @@
       "tag":"greeting",
       "input":["hello","hi there","nice to meet you","hi","hey there","hey","hi there","hi, nice to meet you","hello there"],
       "responses":[
-           "Hello, how may I help you today?", "Hi, how may I help you today"
+           "Hello, how may I help you today?", "Hi, how may I help you today?", "Hello, how may i help you?"
         ]
     },
     {
@@ -12,52 +12,55 @@
       "input":["Thank you","Thanks","Thanks for the info","bye","okay bye","goodbye","see you later"],
       "responses":[
           "Bye",
-          "Goodbye, have a nice day"
+          "Goodbye, have a nice day",
+          "You're welcome, we look forward to seeing you soon"
         ]
     },
     {
       "tag":"reservations",
-      "input":["reserve","reservation", "table for", "available"],
+      "input":["reserve","reservation", "table for", "available", "hi, i want to reserve a table for", "can i reserve a table for",
+        "can i make reservations here",
+      "I would like to make a reservation for"],
       "responses":[
-          "We have tables available for reservation. Please reply with the number of guests"
+          "We have tables available for reservation. Please reply with the number of guests",
+          "Yes, we do have tables available for reservation. Please reply with the number of guests"
         ]
     },
       {
       "tag":"guests",
-      "input":["one", "two", "three", "four","five","six", "seven","eight", "nine","ten","1","2","3","4","5","6"],
+      "input":["one", "two", "three", "four","five","six", "seven","eight", "nine","ten","1","2","3","4","5","6", "i want to reserve a table for 1 guest",
+        "i want to reserve a table for 10 guests", "guests"],
       "responses":[
-           "Understood. We have reserved a table for you"
+           "Understood. We have reserved a table for you",
+            "We have reserved a slot for you"
         ]
     },
-      
-    {
-      "tag":"goodbye",
-      "input":["Thank you","Thanks","Thanks for the info","bye","okay bye","goodbye","see you later"],
-      "responses":[
-            "No worries",
-          "Goodbye, have a nice day"
-        ]
-    },
+
     {
       "tag":"location",
-    "input":["located","address","street", "shopping mall"],
+    "input":["located","address","street", "shopping mall", "where is your restaurant located?", "where is your restaurant",
+    "can you give me the address of your restaurant", "is your restaurant located in a shopping mall?","which street is your restaurant on",
+    "what is your address", "location of your restaurant"],
       "responses":[
           "We are located at 9 Engineering Drive 1, #07-26 EA, Singapore 117575"
         ]
     },
     {
       "tag":"recommendations",
-      "input":["what would you recommend","recommendation", "good", "tastes good", "known for","popular","bestsellers"],
+      "input":["what would you recommend","recommendation", "good", "tastes good", "known for","popular","bestsellers","what would you recommend",
+      "what are your bestsellers", "what do people usually get from you restaurant", "what is your favourite dish",
+        "what is your restaurant known for", "favourite dish", "most popular item on the menu", "most ordered", "popular food and drinks"],
       "responses":[
-        
-          "Our bestsellers are our carbonaras and squid ink pasta",
+
+          "Our bestsellers are our carbonara and squid ink pasta",
           "Our matcha latte is popular with our customers",
             "What flavours do you like?"
 
       ]
     }, {
       "tag":"savoury",
-      "input":["savoury"],
+      "input":["savoury", "savoury food","i like savoury food", "i enjoy savoury food", "any savoury food items on the menu?", "any savoury dishes to recommend me",
+      "savoury food tastes good", "do you offer any savoury food", "I have a preference for savoury food"],
       "responses":[
 
           "I would recommend our squid ink pasta",
@@ -66,7 +69,8 @@
     },
     {
       "tag":"sweet",
-      "input":["sweet","sweet food"],
+      "input":["sweet","sweet food", "i like sweet food","i enjoy sweet food", "any sweet food items on the menu?", "any sweet dishes to recommend me",
+      "sweet food tastes good", "do you offer any sweet food", "I have a preference for sweet food"],
       "responses":[
         
           "I would recommend our maple syrup pancakes",
@@ -74,15 +78,17 @@
       ]
     },
     {
-      "tag":"spicy",
-      "input":["spicy"],
+      "tag": "spicy",
+      "input":["spicy","spicy food", "i like spicy food","i enjoy spicy food", "any spicy food items on the menu?", "any spicy dishes to recommend me",
+      "spicy food tastes good", "do you offer any spicy food", "I have a preference for spicy food"],
       "responses":[
         "I would recommend our spicy squid ink pasta" 
       ]
     },
     {
       "tag":"time",
-      "input":["am","pm"],
+      "input":["am","pm","for 10am", "reserving a table at this time", "book a table for 10am", "reserve a table for 5pm", "for a table at 4pm",
+      "for a table at 1pm", "looking at 1pm", "looking at 2pm", "reserving for 3pm"],
       "responses":[
         "Understood, we have made a reservation for you at that time"
       ]
