@@ -1,8 +1,5 @@
-# Chatbot with TensorFlow 2.0 
+# Restaurant Receptionist Chatbot with TensorFlow 2.0 
 
-A chatbot that can be used for recruitment of pirates all around the world - Going Merry.
-The same model can be used for creating chatbots for any type of organizations.
+We created a restaurant receptionist chatbot that is able to greet users, make reservations, give recommendations to the customers. 
 
-<img src = "https://cdn-images-1.medium.com/max/800/1*SAHhdvu3v9l81OjsfBa_Yw.jpeg" />
-
-## Thank You
+<img src = "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" />
