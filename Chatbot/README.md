@@ -20,4 +20,4 @@ How to activate the Chatbot?
 
 Thank you!!!
 
-<img src = "https://giphy.com/gifs/grateful-gratitude-lumi-fxI1G5PNC5esyNlIUs" />
+<img src = "https://i.pinimg.com/originals/f4/44/93/f444933e5c9ff754fd4c5bc7a45442cc.gif" />
