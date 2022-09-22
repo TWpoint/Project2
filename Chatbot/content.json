@@ -38,7 +38,7 @@
 
     {
       "tag":"location",
-    "input":["located","address","street", "shopping mall", "where is your restaurant located?", "where is your restaurant",
+    "input":["location","located","address","street", "shopping mall", "where is your restaurant located?", "where is your restaurant",
     "can you give me the address of your restaurant", "is your restaurant located in a shopping mall?","which street is your restaurant on",
     "what is your address", "location of your restaurant"],
       "responses":[
